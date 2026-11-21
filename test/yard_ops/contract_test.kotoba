@@ -184,7 +184,7 @@
           (str "route が無い host を DID が名乗っている: " host))))
 
   (testing "route の zone は全て etzhayyim.com"
-    (is (= #{"etzhayyim.com"} (set (map #(get % "zone_name") (get wrangler "routes")))))))
+    (is (= #{"itonami.app"} (set (map #(get % "zone_name") (get wrangler "routes")))))))
 
 (deftest nanoid-agrees-across-five-surfaces
   ;; nanoid は worker 名・route・var・identity 文書・edge の fallback の 5 面に
@@ -196,7 +196,7 @@
       (is (= (str "kotodama-" n) (get wrangler "name"))))
     (testing "nanoid の host が route にある"
       (is (contains? (set (map #(get % "pattern") (get wrangler "routes")))
-                     (str n ".etzhayyim.com/*"))))
+                     (str n ".itonami.app/*"))))
     (testing "thin edge の fallback nanoid が同じ値"
       ;; var が消えた配備でも同じ actor を名乗るための既定値。
       (is (= n (extract-1 edge #"env\.APP_NANOID \?\? \"([^\"]+)\"" edge-path "nanoid fallback"))))))

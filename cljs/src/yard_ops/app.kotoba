@@ -45,7 +45,7 @@
    :name "etzhayyim-project-yard-ops"
    :kind "cloudflare surface"
    :route-count 2
-   :routes ["y4rd0p5x.etzhayyim.com/*" "yard-ops.etzhayyim.com/*"]
+   :routes ["y4rd0p5x.itonami.app/*" "yard-ops.itonami.app/*"]
    :vars ["APP_CAPABILITIES" "APP_DESCRIPTION" "APP_DISPLAY_NAME"
           "APP_FRAMEWORK" "APP_NANOID" "APP_PERFORMER_TYPE" "APP_UI_TYPE"
           "AGENTGATEWAY_MCP_ROUTER_URL"]
