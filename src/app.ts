@@ -1,4 +1,4 @@
-// yard-ops.etzhayyim.com — yard / dock-door coordination
+// yard-ops.itonami.app — yard / dock-door coordination
 // Thin-edge dispatcher: business logic in AgentGateway MCP + pod-side LangServer.
 // 4 methods: checkInTrailer / assignDoor / completeDockJob / getDockSchedule
 
@@ -11,7 +11,7 @@ interface Env {
 interface ExportedHandler<E> { fetch(req: Request, env: E): Promise<Response>; }
 
 const NSID_PREFIX = "com.etzhayyim.apps.yardOps.";
-const ACTOR_DID = "did:web:yard-ops.etzhayyim.com";
+const ACTOR_DID = "did:web:yard-ops.itonami.app";
 
 export default {
   async fetch(req: Request, env: Env): Promise<Response> {

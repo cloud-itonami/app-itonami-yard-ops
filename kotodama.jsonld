@@ -1,6 +1,6 @@
 {
   "@context": "https://etzhayyim.com/ns/kotodama/v1",
-  "@id": "did:web:yard-ops.etzhayyim.com",
+  "@id": "did:web:yard-ops.itonami.app",
   "name": "yard-ops",
   "nanoid": "y4rd0p5x",
   "project": "yard-ops",
